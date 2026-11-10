@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel IoT para monitoramento de sensores e controle de dispositivos inteligentes.">
+    <meta name="theme-color" content="#111b35">
+    <title>IoT Control | Painel de Monitoramento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="IoT Control - página inicial">
+            <span class="brand-mark" aria-hidden="true">⌘</span>
+            <span class="brand-copy">
+                <strong>IoT Control</strong>
+                <small>SMART MONITORING</small>
+            </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#telemetria">Telemetria</a>
+            <a href="#controles">Controles</a>
+        </nav>
+
+        <div class="connection">
+            <span class="connection-dot"></span>
+            Sistema conectado
+        </div>
+    </header>
+
+    <main id="inicio" class="container">
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero-content">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> INTERNET DAS COISAS · IoT</span>
+                <h1 id="page-title">Painel de <span>Monitoramento</span></h1>
+                <p>Acompanhe os dados dos sensores e gerencie seus dispositivos inteligentes em um único lugar.</p>
+            </div>
+            <aside class="system-status" aria-label="Status geral do sistema">
+                <span class="status-icon" aria-hidden="true">✓</span>
+                <div>
+                    <small>STATUS GERAL</small>
+                    <strong>Operacional</strong>
+                    <span>Todos os sistemas disponíveis</span>
+                </div>
+            </aside>
+        </section>
+
+        <section id="telemetria" class="section" aria-labelledby="telemetry-title">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">DADOS EM TEMPO REAL</span>
+                    <h2 id="telemetry-title">Monitoramento</h2>
+                    <p>Informações recebidas pelos sensores IoT.</p>
+                </div>
+                <span class="live-badge"><span></span> Monitoramento ativo</span>
+            </div>
+
+            <div class="sensor-grid">
+                <article class="sensor-card">
+                    <div class="sensor-card-top">
+                        <span class="sensor-icon temperature" aria-hidden="true">🌡️</span>
+                        <span class="sensor-number">SENSOR 01</span>
+                    </div>
+                    <h3>Temperatura</h3>
+                    <div class="sensor-reading">25,8 <span>°C</span></div>
+                    <p class="sensor-description">Temperatura ambiente</p>
+                    <div class="sensor-foot"><span class="mini-dot"></span> Leitura ilustrativa</div>
+                </article>
+
+                <article class="sensor-card">
+                    <div class="sensor-card-top">
+                        <span class="sensor-icon humidity" aria-hidden="true">💧</span>
+                        <span class="sensor-number">SENSOR 02</span>
+                    </div>
+                    <h3>Umidade</h3>
+                    <div class="sensor-reading">64 <span>%</span></div>
+                    <p class="sensor-description">Umidade relativa do ar</p>
+                    <div class="sensor-foot"><span class="mini-dot"></span> Leitura ilustrativa</div>
+                </article>
+
+                <article class="sensor-card">
+                    <div class="sensor-card-top">
+                        <span class="sensor-icon luminosity" aria-hidden="true">☀️</span>
+                        <span class="sensor-number">SENSOR 03</span>
+                    </div>
+                    <h3>Luminosidade</h3>
+                    <div class="sensor-reading">750 <span>lux</span></div>
+                    <p class="sensor-description">Intensidade de luz no ambiente</p>
+                    <div class="sensor-foot"><span class="mini-dot"></span> Leitura ilustrativa</div>
+                </article>
+
+                <article class="sensor-card">
+                    <div class="sensor-card-top">
+                        <span class="sensor-icon air" aria-hidden="true">🌿</span>
+                        <span class="sensor-number">SENSOR 04</span>
+                    </div>
+                    <h3>Qualidade do ar</h3>
+                    <div class="sensor-reading">42 <span>AQI</span></div>
+                    <p class="sensor-description">Índice de qualidade do ar</p>
+                    <div class="sensor-foot"><span class="mini-dot"></span> Leitura ilustrativa</div>
+                </article>
+            </div>
+        </section>
+
+        <section id="controles" class="section controls-section" aria-labelledby="controls-title">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">GERENCIAMENTO</span>
+                    <h2 id="controls-title">Acionamento de dispositivos</h2>
+                    <p>Ative ou desative os equipamentos conectados.</p>
+                </div>
+                <span class="device-count">03 DISPOSITIVOS</span>
+            </div>
+
+            <div class="device-grid">
+                <article class="device-card">
+                    <div class="device-main">
+                        <span class="device-icon" aria-hidden="true">💡</span>
+                        <div><h3>Iluminação</h3><p>Controle das luzes</p></div>
+                    </div>
+                    <div class="device-bottom">
+                        <span class="device-state is-on">Ligado</span>
+                        <button class="toggle-button is-on" type="button" aria-pressed="true">Desligar</button>
+                    </div>
+                </article>
+
+                <article class="device-card">
+                    <div class="device-main">
+                        <span class="device-icon" aria-hidden="true">🌀</span>
+                        <div><h3>Ventilador</h3><p>Ventilação do ambiente</p></div>
+                    </div>
+                    <div class="device-bottom">
+                        <span class="device-state is-off">Desligado</span>
+                        <button class="toggle-button" type="button" aria-pressed="false">Ligar</button>
+                    </div>
+                </article>
+
+                <article class="device-card">
+                    <div class="device-main">
+                        <span class="device-icon" aria-hidden="true">🔔</span>
+                        <div><h3>Alarme</h3><p>Sistema de alerta</p></div>
+                    </div>
+                    <div class="device-bottom">
+                        <span class="device-state is-on">Ligado</span>
+                        <button class="toggle-button is-on" type="button" aria-pressed="true">Desligar</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="info-strip" aria-label="Informações do sistema">
+            <div class="info-item"><span aria-hidden="true">📡</span><div><strong>Conexão IoT</strong><small>Interface demonstrativa</small></div></div>
+            <div class="info-item"><span aria-hidden="true">🛡️</span><div><strong>Sistema monitorado</strong><small>Status visual dos dispositivos</small></div></div>
+            <div class="info-item"><span aria-hidden="true">⚡</span><div><strong>Dados de exemplo</strong><small>Sem conexão com sensores reais</small></div></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 IoT Control · Painel de Monitoramento</p>
+        <span>Desenvolvido com HTML5, CSS3 e JavaScript</span>
+    </footer>
+
+    <script>
+        // Alterna o estado visual dos botões de acionamento.
+        // A interface é demonstrativa e não controla equipamentos reais.
+        document.querySelectorAll(".toggle-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                const ligado = button.getAttribute("aria-pressed") === "true";
+                const novoEstado = !ligado;
+                const card = button.closest(".device-card");
+                const status = card.querySelector(".device-state");
+
+                button.setAttribute("aria-pressed", String(novoEstado));
+                button.textContent = novoEstado ? "Desligar" : "Ligar";
+                button.classList.toggle("is-on", novoEstado);
+                status.textContent = novoEstado ? "Ligado" : "Desligado";
+                status.classList.toggle("is-on", novoEstado);
+                status.classList.toggle("is-off", !novoEstado);
+            });
+        });
+    </script>
+</body>
+</html>
